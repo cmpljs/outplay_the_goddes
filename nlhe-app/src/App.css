@@ -12,6 +12,7 @@
 }
 
 .Table-inside {
+  position: relative;
   flex-direction: row;
   box-shadow: inset 0px 0px 70px #000;
   background: #3a6697;
@@ -39,6 +40,7 @@
   width: 210px;
   height: 150px;
   margin: 40px auto 0 auto;
+  position: relative;
 }
 
 .Hand-two {
@@ -125,7 +127,7 @@
 
 .Btn-push, .Btn-fold {
   position: relative;
-  left: 55%;
+  left: 58%;
   top: -80px;
   width: 120px;
   height: 60px;
@@ -152,9 +154,35 @@ button[class^='Btn']:disabled {
   width: 150px;
   height: 50px;
   position: relative;
-  left: 590px;
+  left: 46%;
   top: -170px; 
   display: flex;
   justify-content: center;
   margin: 0 0 -50px 0;
+}
+
+.Msg-bar {
+  width: 390px;
+  height: 200px;
+  position: absolute;
+  left: 4%;
+  color: rgb(220, 233, 243);
+  font-size: 20px;
+  top: 60%;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.Goddess {
+  position: absolute;
+  width: 10%;
+  height: auto;
+  left: 45%;
+  top: 0px;
+  z-index: 0;
+}
+
+.Header {
+  height: 70px;
 }

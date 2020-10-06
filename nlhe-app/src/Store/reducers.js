@@ -6,8 +6,8 @@ const initialState = {
     flop: [null, null, null],
     turn: null,
     river: null,
-    yourStack: 5000,
-    oppStack: 10000,
+    yourStack: 1000,
+    oppStack: 20000,
     potSize: 0,
 }
 

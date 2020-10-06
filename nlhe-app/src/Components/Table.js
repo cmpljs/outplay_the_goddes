@@ -18,6 +18,10 @@ export default function Table(props) {
     const [yourComb, setYourComb] = useState('');
     const [buttonPos, setButtonPos] = useState(false);
     const [option, setOption] = useState('Push');
+    const [currentMsg, setCurrentMsg] = useState(`Edik is a Goddess so he doesnt care about the money.
+    You better be careful! He will either go all in, bet enough to put you all in or 
+    call your all in! 
+    He is a kind Goddess though, so he allows you to play without blinds.`);
 
     const resetBoard = () => {
         setFlopCards([null, null, null]);
@@ -27,6 +31,7 @@ export default function Table(props) {
         setHandTwo([null, null]);
         setOppComb('');
         setYourComb('');
+        setCurrentMsg('');
     }
 
     const resetGame = () => {
@@ -41,8 +46,8 @@ export default function Table(props) {
         let pot = store.getState().potSize;
 
         if (!yourStack || !oppStack) {
-            alert(`You ${yourStack ? 'won' : 'lost'}`);
-            setTimeout(() => resetGame(), 1000);
+            setCurrentMsg(`You ${yourStack ? 'won!' : 'lost!'}`);
+            setTimeout(() => resetGame(), 3000);
             return;
         }
 
@@ -52,6 +57,7 @@ export default function Table(props) {
             store.dispatch(setStacksAction([oppStack, yourStack]));
             store.dispatch(setPotSizeAction(pot));
             setOption('Call');
+            setCurrentMsg(`Edik bets $${pot}`);
             setButtonPos(!buttonPos);
         } else {
             setOption('Push');
@@ -106,11 +112,16 @@ export default function Table(props) {
         let oppStack = store.getState().oppStack;
         let stackDiff = yourStack > oppStack ? yourStack - oppStack : oppStack - yourStack;
         let pot = store.getState().potSize;
+        console.log(pot, yourStack, oppStack, buttonPos);
+        pot = !pot ? yourStack + oppStack - stackDiff : pot * 2;
+        setCurrentMsg(!buttonPos ? `Edik calls $${pot/2}` : '');
 
-        pot += yourStack + oppStack - stackDiff;
-        console.log(`pot: ${pot}, stack diff: ${stackDiff}`)
+
         yourStack = pot/2 > yourStack ? 0 : yourStack - pot/2;
-        oppStack = pot/2 > oppStack ? 0 : oppStack - pot/2;
+        if (!buttonPos) {
+            oppStack = pot/2 > oppStack ? 0 : oppStack - pot/2;
+        }
+
         store.dispatch(setStacksAction([oppStack, yourStack]));
         store.dispatch(setPotSizeAction(pot));
         setButtonPos(!buttonPos);
@@ -142,21 +153,28 @@ export default function Table(props) {
         store.dispatch(setStacksAction([store.getState().oppStack + store.getState().potSize,
                                         store.getState().yourStack]));
         resetBoard();
+        
         play();
     }
 
     const onPushClick = () => {
         renderBoard();
         defineWinner();
-        setTimeout(() => play(), 10100);
+        setTimeout(() => play(), 8100);
     }
 
     const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
     return (
         <div>
+            <div className='Header'>
+
+            </div>
+            <div className='Msg-bar'>
+                {currentMsg}
+            </div>
             <button onClick={play} className='Temp-btn' disabled={!optionsDisabled}>Play</button>
-           
+            <img src={images[`Goddess.png`]} className='Goddess' alt='Goddess' />
             <div className='Hand-one'>
                 <img className='Card' src={images[`${handOne[0]}.png`]} alt={handOne[0]}></img>
                 <img className='Card' src={images[`${handOne[1]}.png`]} alt={handOne[1]}></img>
@@ -172,7 +190,7 @@ export default function Table(props) {
 
                     <div className='Hand-one-stack'>
                         <p>
-                        {store.getState().oppStack} { !store.getState().oppStack ? 'Eduard is All in!' : ''}
+                        Stack: ${store.getState().oppStack} { !store.getState().oppStack ? 'Edik is All in!' : ''}
                         </p>
                     </div>
 
@@ -184,14 +202,14 @@ export default function Table(props) {
 
                     <div className='Hand-two-stack'>
                         <p>
-                        {store.getState().yourStack} {!store.getState().yourStack ? 'Your are All in!' : ''}
+                        Stack: ${store.getState().yourStack} {!store.getState().yourStack ? 'Your are All in!' : ''}
                         </p>
                     </div>
                 </div>
             </div>
             
             <div className='Pot-size'>
-                {`pot: ${store.getState().potSize}`}
+                {`pot: $${store.getState().potSize}`}
             </div>
 
             <div className='Hand-two-combination'>
