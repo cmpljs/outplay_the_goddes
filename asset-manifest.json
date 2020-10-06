@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/outplay_the_goddes/static/css/main.ffd15017.chunk.css",
-    "main.js": "/outplay_the_goddes/static/js/main.92335235.chunk.js",
-    "main.js.map": "/outplay_the_goddes/static/js/main.92335235.chunk.js.map",
+    "main.css": "/outplay_the_goddes/static/css/main.1c454dd8.chunk.css",
+    "main.js": "/outplay_the_goddes/static/js/main.3e080fa2.chunk.js",
+    "main.js.map": "/outplay_the_goddes/static/js/main.3e080fa2.chunk.js.map",
     "runtime-main.js": "/outplay_the_goddes/static/js/runtime-main.46a6cc11.js",
     "runtime-main.js.map": "/outplay_the_goddes/static/js/runtime-main.46a6cc11.js.map",
-    "static/js/2.d268283e.chunk.js": "/outplay_the_goddes/static/js/2.d268283e.chunk.js",
-    "static/js/2.d268283e.chunk.js.map": "/outplay_the_goddes/static/js/2.d268283e.chunk.js.map",
+    "static/js/2.7aa6420f.chunk.js": "/outplay_the_goddes/static/js/2.7aa6420f.chunk.js",
+    "static/js/2.7aa6420f.chunk.js.map": "/outplay_the_goddes/static/js/2.7aa6420f.chunk.js.map",
     "index.html": "/outplay_the_goddes/index.html",
-    "precache-manifest.f97ac9dd2a3ceb67a11a983c1b4b0886.js": "/outplay_the_goddes/precache-manifest.f97ac9dd2a3ceb67a11a983c1b4b0886.js",
+    "precache-manifest.fa587f2dd4814905874a7d5effd9cef1.js": "/outplay_the_goddes/precache-manifest.fa587f2dd4814905874a7d5effd9cef1.js",
     "service-worker.js": "/outplay_the_goddes/service-worker.js",
-    "static/css/main.ffd15017.chunk.css.map": "/outplay_the_goddes/static/css/main.ffd15017.chunk.css.map",
-    "static/js/2.d268283e.chunk.js.LICENSE.txt": "/outplay_the_goddes/static/js/2.d268283e.chunk.js.LICENSE.txt",
+    "static/css/main.1c454dd8.chunk.css.map": "/outplay_the_goddes/static/css/main.1c454dd8.chunk.css.map",
+    "static/js/2.7aa6420f.chunk.js.LICENSE.txt": "/outplay_the_goddes/static/js/2.7aa6420f.chunk.js.LICENSE.txt",
     "static/media/2C.png": "/outplay_the_goddes/static/media/2C.136dab43.png",
     "static/media/2D.png": "/outplay_the_goddes/static/media/2D.1451de5d.png",
     "static/media/2H.png": "/outplay_the_goddes/static/media/2H.ebe43495.png",
@@ -48,6 +48,7 @@
     "static/media/AD.png": "/outplay_the_goddes/static/media/AD.f37d608f.png",
     "static/media/AH.png": "/outplay_the_goddes/static/media/AH.a762540d.png",
     "static/media/AS.png": "/outplay_the_goddes/static/media/AS.e6a6d2f8.png",
+    "static/media/Goddess.png": "/outplay_the_goddes/static/media/Goddess.7c2542db.png",
     "static/media/JC.png": "/outplay_the_goddes/static/media/JC.1595a3ea.png",
     "static/media/JD.png": "/outplay_the_goddes/static/media/JD.d5682eb4.png",
     "static/media/JH.png": "/outplay_the_goddes/static/media/JH.fdf4ffc4.png",
@@ -79,8 +80,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.46a6cc11.js",
-    "static/js/2.d268283e.chunk.js",
-    "static/css/main.ffd15017.chunk.css",
-    "static/js/main.92335235.chunk.js"
+    "static/js/2.7aa6420f.chunk.js",
+    "static/css/main.1c454dd8.chunk.css",
+    "static/js/main.3e080fa2.chunk.js"
   ]
 }

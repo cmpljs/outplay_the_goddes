@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2e8d6ff758898b115b0fad9fadf0180",
+    "revision": "3636cffa50de96b0cb7ca1781417bc81",
     "url": "/outplay_the_goddes/index.html"
   },
   {
-    "revision": "9b39d8beeec2b6019e2f",
-    "url": "/outplay_the_goddes/static/css/main.ffd15017.chunk.css"
+    "revision": "7ed54b50c791624d6f43",
+    "url": "/outplay_the_goddes/static/css/main.1c454dd8.chunk.css"
   },
   {
-    "revision": "7d15bf7e89db2d67a5db",
-    "url": "/outplay_the_goddes/static/js/2.d268283e.chunk.js"
+    "revision": "481759bdc097ee0300aa",
+    "url": "/outplay_the_goddes/static/js/2.7aa6420f.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/outplay_the_goddes/static/js/2.d268283e.chunk.js.LICENSE.txt"
+    "url": "/outplay_the_goddes/static/js/2.7aa6420f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9b39d8beeec2b6019e2f",
-    "url": "/outplay_the_goddes/static/js/main.92335235.chunk.js"
+    "revision": "7ed54b50c791624d6f43",
+    "url": "/outplay_the_goddes/static/js/main.3e080fa2.chunk.js"
   },
   {
     "revision": "2e023ceb553fe3f14dbe",
@@ -166,6 +166,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e6a6d2f8a350079dcad97e814d3559e7",
     "url": "/outplay_the_goddes/static/media/AS.e6a6d2f8.png"
+  },
+  {
+    "revision": "7c2542dbe45813033af6cb4434cc26af",
+    "url": "/outplay_the_goddes/static/media/Goddess.7c2542db.png"
   },
   {
     "revision": "1595a3ea21f452c290cf26af7ae53ede",
