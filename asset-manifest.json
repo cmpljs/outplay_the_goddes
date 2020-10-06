@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/outplay_the_goddes/static/css/main.ffd15017.chunk.css",
-    "main.js": "/outplay_the_goddes/static/js/main.99dd312c.chunk.js",
-    "main.js.map": "/outplay_the_goddes/static/js/main.99dd312c.chunk.js.map",
+    "main.js": "/outplay_the_goddes/static/js/main.92335235.chunk.js",
+    "main.js.map": "/outplay_the_goddes/static/js/main.92335235.chunk.js.map",
     "runtime-main.js": "/outplay_the_goddes/static/js/runtime-main.46a6cc11.js",
     "runtime-main.js.map": "/outplay_the_goddes/static/js/runtime-main.46a6cc11.js.map",
     "static/js/2.d268283e.chunk.js": "/outplay_the_goddes/static/js/2.d268283e.chunk.js",
     "static/js/2.d268283e.chunk.js.map": "/outplay_the_goddes/static/js/2.d268283e.chunk.js.map",
     "index.html": "/outplay_the_goddes/index.html",
-    "precache-manifest.4351a595551977022164d078f16b3321.js": "/outplay_the_goddes/precache-manifest.4351a595551977022164d078f16b3321.js",
+    "precache-manifest.f97ac9dd2a3ceb67a11a983c1b4b0886.js": "/outplay_the_goddes/precache-manifest.f97ac9dd2a3ceb67a11a983c1b4b0886.js",
     "service-worker.js": "/outplay_the_goddes/service-worker.js",
     "static/css/main.ffd15017.chunk.css.map": "/outplay_the_goddes/static/css/main.ffd15017.chunk.css.map",
     "static/js/2.d268283e.chunk.js.LICENSE.txt": "/outplay_the_goddes/static/js/2.d268283e.chunk.js.LICENSE.txt",
@@ -81,6 +81,6 @@
     "static/js/runtime-main.46a6cc11.js",
     "static/js/2.d268283e.chunk.js",
     "static/css/main.ffd15017.chunk.css",
-    "static/js/main.99dd312c.chunk.js"
+    "static/js/main.92335235.chunk.js"
   ]
 }
