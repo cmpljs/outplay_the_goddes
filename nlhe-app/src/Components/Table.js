@@ -156,7 +156,7 @@ export default function Table(props) {
     return (
         <div>
             <button onClick={play} className='Temp-btn' disabled={!optionsDisabled}>Play</button>
-            <img></img>
+           
             <div className='Hand-one'>
                 <img className='Card' src={images[`${handOne[0]}.png`]} alt={handOne[0]}></img>
                 <img className='Card' src={images[`${handOne[1]}.png`]} alt={handOne[1]}></img>
