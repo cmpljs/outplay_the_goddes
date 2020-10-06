@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/outplay_the_goddes/precache-manifest.fa587f2dd4814905874a7d5effd9cef1.js"
+  "/outplay_the_goddes/precache-manifest.369a5f8ccf5ba14878991d8bcd9c0cdc.js"
 );
 
 self.addEventListener('message', (event) => {

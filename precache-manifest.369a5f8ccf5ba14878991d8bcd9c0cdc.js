@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3636cffa50de96b0cb7ca1781417bc81",
+    "revision": "ac859fcf08ce4b9a0439221a23716524",
     "url": "/outplay_the_goddes/index.html"
   },
   {
-    "revision": "7ed54b50c791624d6f43",
-    "url": "/outplay_the_goddes/static/css/main.1c454dd8.chunk.css"
+    "revision": "f022293e0e704f239b03",
+    "url": "/outplay_the_goddes/static/css/main.adce49f8.chunk.css"
   },
   {
     "revision": "481759bdc097ee0300aa",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/outplay_the_goddes/static/js/2.7aa6420f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ed54b50c791624d6f43",
+    "revision": "f022293e0e704f239b03",
     "url": "/outplay_the_goddes/static/js/main.3e080fa2.chunk.js"
   },
   {
