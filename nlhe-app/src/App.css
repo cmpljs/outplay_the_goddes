@@ -1,0 +1,160 @@
+.Table-border, .Table-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(156, 156, 156);
+  border-radius: 500px;
+  margin: 0 auto;
+  height: 500px;
+  width: 1000px;
+  box-shadow:  40px 40px 10px #000;
+}
+
+.Table-inside {
+  flex-direction: row;
+  box-shadow: inset 0px 0px 70px #000;
+  background: #3a6697;
+  border: 2px solid rgb(44, 40, 40);
+  width: 985px;
+  height: 485px;
+}
+
+.Flop {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.Turn, .River {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 105px;
+}
+
+.Hand-one, .Hand-two {
+  width: 210px;
+  height: 150px;
+  margin: 40px auto 0 auto;
+}
+
+.Hand-two {
+  margin: 0 auto 0 auto;
+
+}
+
+.Card {
+  width:100px;
+}
+
+.Temp-btn {
+  position: absolute;
+  top: 200px; 
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(103, 153, 211);
+  font-size: 20px;
+  color: #fff;
+  border: none;
+}
+
+.Temp-btn:focus {
+  outline: none;
+  border: none;
+  position: absolute;
+}
+
+.Temp-btn:hover {
+  cursor: pointer;
+  animation: shine 1s ease-in-out 0s 1 normal forwards;
+}
+
+
+@keyframes shine {
+  from {
+    background:  rgb(43, 60, 95);
+  }
+
+
+  to {
+    background: rgb(46, 119, 202);
+  }
+}
+
+.Table-outside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hand-one-stack {
+  position: relative;
+  top: 60px;
+  color: #fff;
+}
+
+.Hand-one-combination {
+  position: relative;
+  left: 60%;
+  color: #fff;
+  width: 150px;
+  height: 20px;
+  margin: -22px 0 5px 0;
+}
+
+.Hand-two-stack {
+  color: #fff;
+  position: relative;
+  top: -60px;
+}
+
+.Hand-two-combination {
+  position: relative;
+  left: 60%;
+  color: #fff;
+  width: 150px;
+  height: 20px;
+  margin: 5px 0 -22px 0;
+}
+
+.Btn-push, .Btn-fold {
+  position: relative;
+  left: 55%;
+  top: -80px;
+  width: 120px;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid black;
+  font-size: 18px;
+  color: #fff;
+  background: rgb(43, 60, 95);
+}
+
+button[class^='Btn']:hover:enabled {
+  cursor: pointer;
+  animation: shine 1s ease-in-out 0s 1 normal forwards;
+}
+
+button[class^='Btn']:disabled {
+  background: rgba(138, 138, 138, 0.9);
+  color: rgba(41, 36, 36, 0.6);
+
+}
+
+.Pot-size {
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  left: 590px;
+  top: -170px; 
+  display: flex;
+  justify-content: center;
+  margin: 0 0 -50px 0;
+}
